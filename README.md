@@ -44,4 +44,7 @@ sudo apt install cpplint
 cpplint --filter="-legal/copyright" $( find . -name *.cpp | grep -vE -e "^./build/" )
 ```
 
+### Results
+```bash
+ghf
 
