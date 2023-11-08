@@ -1,0 +1,15 @@
+Listner Node
+[INFO] [1699413611.500347047] [Subscriber]: Yaatri gan krupiya dhayaan de : Pudhil Station Dadar 0'
+[INFO] [1699413611.999889268] [Subscriber]: Yaatri gan krupiya dhayaan de : Pudhil Station Dadar 1'
+[INFO] [1699413612.499989349] [Subscriber]: Yaatri gan krupiya dhayaan de : Pudhil Station Dadar 2'
+[INFO] [1699413613.000135125] [Subscriber]: Yaatri gan krupiya dhayaan de : Pudhil Station Dadar 3'
+[INFO] [1699413613.499686418] [Subscriber]: Yaatri gan krupiya dhayaan de : Pudhil Station Dadar 4'
+[INFO] [1699413613.999907558] [Subscriber]: Yaatri gan krupiya dhayaan de : Pudhil Station Dadar 5'
+
+Talker Node
+[INFO] [1699413611.498534988] [Publisher]: Publishing: ' Pudhil Station Dadar 0'
+[INFO] [1699413611.998484346] [Publisher]: Publishing: ' Pudhil Station Dadar 1'
+[INFO] [1699413612.498476537] [Publisher]: Publishing: ' Pudhil Station Dadar 2'
+[INFO] [1699413612.998682725] [Publisher]: Publishing: ' Pudhil Station Dadar 3'
+[INFO] [1699413613.498309040] [Publisher]: Publishing: ' Pudhil Station Dadar 4'
+[INFO] [1699413613.998398051] [Publisher]: Publishing: ' Pudhil Station Dadar 5'
