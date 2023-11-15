@@ -1,0 +1,12 @@
+ros2 launch beginner_tutorials custom_launch.yaml frequency:=1
+[INFO] [launch]: All log files can be found below /home/mvboiii/.ros/log/2023-11-14-22-21-27-593049-mvboiii-27243
+[INFO] [launch]: Default logging verbosity is set to INFO
+[INFO] [talker-1]: process started with pid [27245]
+[INFO] [listener-2]: process started with pid [27247]
+[talker-1] [INFO] [1700018487.750407245] [talker]: Parameter 'frequency' set to: 1
+[talker-1] [INFO] [1700018488.751274866] [talker]: Publishing: 'Pudhil station Dadar'
+[listener-2] [INFO] [1700018488.752689921] [listener]: I heard: 'Pudhil station Dadar'
+[talker-1] [INFO] [1700018489.751219687] [talker]: Publishing: 'Pudhil station Dadar'
+[listener-2] [INFO] [1700018489.752521336] [listener]: I heard: 'Pudhil station Dadar'
+[talker-1] [INFO] [1700018490.751135481] [talker]: Publishing: 'Pudhil station Dadar'
+[listener-2] [INFO] [1700018490.752422961] [listener]: I heard: 'Pudhil station Dadar'
