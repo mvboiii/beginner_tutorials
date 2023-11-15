@@ -1,0 +1,8 @@
+[talker-1] [INFO] [1700018543.750454151] [talker]: Publishing: 'Pudhil station Dadar'
+[listener-2] [INFO] [1700018543.751711730] [listener]: I heard: 'Pudhil station Dadar'
+[talker-1] [INFO] [1700018544.358215253] [talker]: Received service request
+[talker-1] Input: 'pudhil_station_matunga'
+[talker-1] [INFO] [1700018544.358252903] [talker]: Sending back response: 'pudhil_station_matunga Edited by service'
+[talker-1] [INFO] [1700018544.750408556] [talker]: Publishing: 'pudhil_station_matunga Edited by service'
+[listener-2] [INFO] [1700018544.751770814] [listener]: I heard: 'pudhil_station_matunga Edited by service'
+[talker-1] [INFO] [1700018545.750279407] [talker]: Publishing: 'pudhil_station_matunga Edited by service'
