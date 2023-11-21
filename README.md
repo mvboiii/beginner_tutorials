@@ -26,6 +26,8 @@ ros2 run beginner_tutorials talker --ros-args --log-level debug
 ros2 run beginner_tutorials listener --ros-args --log-level debug
 # Run server_client
 ros2 run beginner_tutorials server_client
+# Run publisher and subscriber together
+ros2 launch beginner_tutorials custom_launch.yaml frequency:=1
 ```
 
 ### CppCheck
