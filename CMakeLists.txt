@@ -16,6 +16,7 @@ find_package(std_msgs REQUIRED)
 find_package(tf2 REQUIRED)
 find_package(tf2_ros REQUIRED)
 find_package(geometry_msgs REQUIRED)
+find_package(rosidl_default_generators REQUIRED)  
 
 ament_export_dependencies(rosidl_default_runtime)
 
@@ -47,4 +48,31 @@ rosidl_target_interfaces(talker
 rosidl_target_interfaces(server_client
   ${PROJECT_NAME} "rosidl_typesupport_cpp")
 
-ament_package()
+if(BUILD_TESTING)
+  find_package(ament_cmake_gtest REQUIRED)
+  find_package(ament_lint_auto REQUIRED)
+
+  # the following lines skip linters
+  set(ament_cmake_cppcheck_FOUND TRUE)
+  set(ament_cmake_copyright_FOUND TRUE)
+  set(ament_cmake_cpplint_FOUND TRUE)
+  set(ament_cmake_flake8_FOUND TRUE)
+  set(ament_cmake_uncrustify_FOUND TRUE)
+  set(ament_cmake_xmllint_FOUND TRUE)
+  set(ament_cmake_lint_cmake_FOUND TRUE)
+
+  # Run all lint tests in package.xml except those listed above
+  ament_lint_auto_find_test_dependencies()
+
+  # Add a gtest executable
+  set(TESTFILES
+    test/test.cpp)
+  ament_add_gtest(${PROJECT_NAME}_test ${TESTFILES})
+  ament_target_dependencies(${PROJECT_NAME}_test rclcpp std_msgs)
+
+  install(TARGETS
+  ${PROJECT_NAME}_test
+  DESTINATION lib/${PROJECT_NAME})
+endif()
+
+ament_export_dependencies(rosidl_default_runtime)

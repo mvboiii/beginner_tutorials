@@ -79,7 +79,12 @@ At time 0.0
   0.000  0.000  0.000  1.000
 
 ```
+### test 
+```bash
+# command to run gtest
+colcon test --event-handlers console_direct+ --packages-select beginner_tutorials
 
+```
 ### CppCheck
 ```bash
 # install cppcheck
