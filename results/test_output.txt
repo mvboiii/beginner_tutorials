@@ -1,0 +1,48 @@
+Starting >>> beginner_tutorials
+UpdateCTestConfiguration  from :/home/mvboiii/beginner_tutorials/build/beginner_tutorials/CTestConfiguration.ini
+Parse Config file:/home/mvboiii/beginner_tutorials/build/beginner_tutorials/CTestConfiguration.ini
+   Site: mvboiii
+   Build name: (empty)
+ Add coverage exclude regular expressions.
+SetCTestConfiguration:CMakeCommand:/usr/bin/cmake
+Create new tag: 20231127-0414 - Experimental
+UpdateCTestConfiguration  from :/home/mvboiii/beginner_tutorials/build/beginner_tutorials/CTestConfiguration.ini
+Parse Config file:/home/mvboiii/beginner_tutorials/build/beginner_tutorials/CTestConfiguration.ini
+Test project /home/mvboiii/beginner_tutorials/build/beginner_tutorials
+Constructing a list of tests
+Done constructing a list of tests
+Updating test list for fixtures
+Added 0 tests to meet fixture requirements
+Checking test dependency graph...
+Checking test dependency graph end
+test 1
+    Start 1: beginner_tutorials_test
+
+1: Test command: /usr/bin/python3.8 "-u" "/home/mvboiii/ros2_humble/install/ament_cmake_test/share/ament_cmake_test/cmake/run_test.py" "/home/mvboiii/beginner_tutorials/build/beginner_tutorials/test_results/beginner_tutorials/beginner_tutorials_test.gtest.xml" "--package-name" "beginner_tutorials" "--output-file" "/home/mvboiii/beginner_tutorials/build/beginner_tutorials/ament_cmake_gtest/beginner_tutorials_test.txt" "--command" "/home/mvboiii/beginner_tutorials/build/beginner_tutorials/beginner_tutorials_test" "--gtest_output=xml:/home/mvboiii/beginner_tutorials/build/beginner_tutorials/test_results/beginner_tutorials/beginner_tutorials_test.gtest.xml"
+1: Test timeout computed to be: 60
+1: -- run_test.py: invoking following command in '/home/mvboiii/beginner_tutorials/build/beginner_tutorials':
+1:  - /home/mvboiii/beginner_tutorials/build/beginner_tutorials/beginner_tutorials_test --gtest_output=xml:/home/mvboiii/beginner_tutorials/build/beginner_tutorials/test_results/beginner_tutorials/beginner_tutorials_test.gtest.xml
+1: [==========] Running 1 test from 1 test suite.
+1: [----------] Global test environment set-up.
+1: [----------] 1 test from TestNode
+1: [ RUN      ] TestNode.test_for_publishers_count
+1: [       OK ] TestNode.test_for_publishers_count (357 ms)
+1: [----------] 1 test from TestNode (357 ms total)
+1: 
+1: [----------] Global test environment tear-down
+1: [==========] 1 test from 1 test suite ran. (357 ms total)
+1: [  PASSED  ] 1 test.
+1: -- run_test.py: return code 0                 
+1: -- run_test.py: inject classname prefix into gtest result file '/home/mvboiii/beginner_tutorials/build/beginner_tutorials/test_results/beginner_tutorials/beginner_tutorials_test.gtest.xml'
+1: -- run_test.py: verify result file '/home/mvboiii/beginner_tutorials/build/beginner_tutorials/test_results/beginner_tutorials/beginner_tutorials_test.gtest.xml'
+1/1 Test #1: beginner_tutorials_test ..........   Passed    0.80 sec
+
+100% tests passed, 0 tests failed out of 1
+
+Label Time Summary:
+gtest    =   0.80 sec*proc (1 test)
+
+Total Test time (real) =   0.80 sec
+Finished <<< beginner_tutorials [0.99s]
+
+Summary: 1 package finished [2.27s]
