@@ -29,6 +29,56 @@ ros2 run beginner_tutorials server_client
 # Run publisher and subscriber together
 ros2 launch beginner_tutorials custom_launch.yaml frequency:=1
 ```
+### Bags 
+```bash
+# make bags directory
+mkdir bags
+
+# to run the bag
+ros2 bag record chatter
+
+# to review the recording
+ros2 bag info recording_bag_name
+
+# rosbag info result
+mvboiii@mvboiii:~/beginner_tutorials/bags$ ros2 bag info /home/mvboiii/beginner_tutorials/bags/rosbag2_2023_11_26-21_13_09/rosbag2_2023_11_26-21_13_09_0.db3
+
+closing.
+
+closing.
+[INFO] [1701051594.468394532] [rosbag2_storage]: Opened database '/home/mvboiii/beginner_tutorials/bags/rosbag2_2023_11_26-21_13_09/rosbag2_2023_11_26-21_13_09_0.db3' for READ_ONLY.
+
+Files:             /home/mvboiii/beginner_tutorials/bags/rosbag2_2023_11_26-21_13_09/rosbag2_2023_11_26-21_13_09_0.db3
+Bag size:          36.0 KiB
+Storage id:        sqlite3
+Duration:          119.495s
+Start:             Nov 26 2023 21:13:09.803 (1701051189.803)
+End:               Nov 26 2023 21:15:09.298 (1701051309.298)
+Messages:          240
+Topic information: Topic: /chatter | Type: std_msgs/msg/String | Count: 240 | Serialization Format: cdr
+```
+
+### tf2_frames
+```bash
+# to run the talker frame
+ros2 run beginner_tutorials talker man 0 1 0 0 0 0
+
+# to echo the frame 
+ros2 run tf2_ros tf2_echo world man
+
+# results
+At time 0.0
+- Translation: [0.000, 1.000, 0.000]
+- Rotation: in Quaternion [0.000, 0.000, 0.000, 1.000]
+- Rotation: in RPY (radian) [0.000, -0.000, 0.000]
+- Rotation: in RPY (degree) [0.000, -0.000, 0.000]
+- Matrix:
+  1.000  0.000  0.000  0.000
+  0.000  1.000  0.000  1.000
+  0.000  0.000  1.000  0.000
+  0.000  0.000  0.000  1.000
+
+```
 
 ### CppCheck
 ```bash
