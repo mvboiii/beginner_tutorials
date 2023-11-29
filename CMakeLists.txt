@@ -29,7 +29,7 @@ ament_target_dependencies(talker rclcpp std_msgs geometry_msgs tf2 tf2_ros)
 
 add_executable(listener src/subscriber.cpp)
 ament_target_dependencies(listener rclcpp std_msgs)
-
+  
 add_executable(server_client src/server_client.cpp)
 ament_target_dependencies(server_client rclcpp)
 
@@ -75,4 +75,4 @@ if(BUILD_TESTING)
   DESTINATION lib/${PROJECT_NAME})
 endif()
 
-ament_export_dependencies(rosidl_default_runtime)
+ament_package()
